@@ -1,0 +1,486 @@
+:root {
+    --unit-100vw: 100vw;
+}
+@supports (width: 100dvw) {
+    :root {
+        --unit-100vw: 100dvw;
+    }
+}
+
+
+
+
+@font-face {
+    font-family: "Tektur";
+    src: url(Tektur-VariableFont_wdth\,wght.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 400;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Tektur";
+}
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+}
+
+header{
+    height: 60px;
+    width: var(--unit-100vw);
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #83ff99;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.521);
+}
+header > h1{
+    font-family: 900;
+    text-decoration: underline;
+}
+.content{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-inline: 1px solid #999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.225);
+    position: relative;
+    top: -70px;
+    padding-top: 100px;
+}
+h2{
+    margin-left: -20px;
+}
+
+
+.Erklärung{
+    padding-inline: 50px ;
+    margin-top: 70px;
+}
+
+
+.PhysikalischeGrößen{
+    padding-inline: 50px ;
+    margin-top: 70px;
+}
+table{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+th, td{
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+.einheitszeichen{
+    border-right: none;
+}
+.tr:hover{
+    background-color: #eee;
+}
+
+
+
+.Ausrechnen{
+    padding-inline: 50px ;
+    margin-top: 70px;
+}
+.Dreieckserklärung{
+    width: 60%;
+}
+.URI{
+    display: flex;
+    flex-direction: row;
+}
+.DreieckURI{
+    height: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.PUI{
+    display: flex;
+    flex-direction: row;
+}
+.DreieckPUI{
+    height: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+
+
+.Stromkreise{
+    padding-inline: 50px ;
+    margin-top: 70px;
+}
+.Reihe{
+    display: flex;
+    flex-direction: row;
+}
+.Reihenerklärung{
+    width: 60%;
+}
+.Reihenschaltung{
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.Parallel{
+    display: flex;
+    flex-direction: row;
+}
+.Parallelerklärung{
+    width: 60%;
+}
+.Parallelschaltung{
+    height: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+
+
+
+.Schaltzeichen{
+    padding-inline: 50px ;
+    margin-top: 70px;
+}
+.Symbol{
+    width: 100px;
+}
+.Symboltabellenreihe{
+    height: 50px;
+}
+
+
+
+
+
+.Messen{
+    padding-inline: 50px ;
+    margin-top: 70px;
+}
+.SpannungMessen{
+    display: flex;
+    flex-direction: row;
+}
+.Messen p{
+    width: 60%;
+}
+.VoltMessen{
+    height: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.StromstärkeMessen{
+    display: flex;
+    flex-direction: row;
+}
+.AmpereMessen{
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+
+
+
+.Quiz1{
+    padding-inline: 50px ;
+    margin-top: 70px;
+}
+.Stromkreisquiz{
+    display: flex;
+    align-items: center;
+}
+.Stromkreisquiz img{
+    height: 300px;
+    margin: 50px;
+    margin-right: 100px;
+}
+.Stromkreisquiz div p{
+    font-weight: 700;
+}
+.Stromkreisquiz div p input{
+    font-weight: 700;
+    width: 100px;
+    border-bottom: 2px solid black;
+    text-align: left;
+}
+
+
+.Gefahren{
+    padding-inline: 50px ;
+    margin-top: 70px;
+}
+
+
+
+.Quiz{
+    padding-inline: 50px ;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.rechterRand{
+    border-right: none;
+}
+.untererRand{
+    border-bottom: none;
+}
+.QuizTabelle{
+    margin-left: auto;
+    margin-right: auto ;
+    margin-top: 40px;
+}
+input{
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: "Tektur";
+}
+
+
+
+
+.Gatter{
+    padding-inline: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.Input1{
+    height: 5px;
+}
+.Input2{
+    height: 5px;
+}
+.Inputs{
+    translate: 5px;
+    height: 80px;
+    display: grid;
+    align-items: center;
+}
+.Knöpfe{
+    height: 80px;
+    display: grid;
+    align-items: center;
+}
+.Knopf{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+.Knopf p{
+    translate: -1px -2px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.Undgatter{
+    display: flex;
+    flex-direction: row;
+}
+#Und-Gatter{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.Und-Gatter{
+    height: 80px;
+    z-index: 2;
+}
+
+
+.Odergatter{
+    display: flex;
+    flex-direction: row;
+}
+#Oder-Gatter{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.Oder-Gatter{
+    height: 80px;
+    z-index: 2;
+}
+
+
+.Notgatter{
+    display: flex;
+    flex-direction: row;
+}
+#Not-Gatter{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.Not-Gatter{
+    height: 80px;
+    z-index: 2;
+}
+
+.XOdergatter{
+    display: flex;
+    flex-direction: row;
+}
+#XOder-Gatter{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.XOder-Gatter{
+    height: 80px;
+    z-index: 2;
+}
+
+
+#XOder-Gatter-Vereinfachung{
+    height: 300px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+@media only screen and (orientation: landscape) {
+    .Knöpfe-XOder{
+        height: 80px;
+        display: grid;
+        align-items: center;
+        position: absolute;
+        top: 167px;
+        left: -30px;
+    }
+    .Gatter-One{
+        height: 170px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+    }
+    .Gatter-Two{
+        height: 170px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+    .Gatter-Three{
+        height: 80px;
+        position: absolute;
+        top: 167px;
+        left: 170px;
+        z-index: 2;
+    }
+    .Gatter-Four{
+        height: 150px;
+        position: absolute;
+        top: 0;
+        left: 177px;
+        z-index: 2;
+    }
+    .Gatter-Five{
+        height: 88px;
+        position: absolute;
+        top: 160px;
+        left: 290px;
+        z-index: 3;
+    }
+    .Gatter-Six{
+        height: 80px;
+        position: absolute;
+        top: 135px;
+        left: 520px;
+        z-index: 4;
+    }
+}
+@media only screen and (orientation: portrait) {
+    .Gatter{
+        margin-bottom: -100px;
+    }
+    .Knöpfe-XOder{
+        height: calc(8.0vw * 1.3);
+        display: grid;
+        align-items: center;
+        position: absolute;
+        top: calc(16.7vw * 1.3);
+        left: calc(-4.0vw * 1.3);
+    }
+    .Knöpfe-XOder .Knopf{
+        height: calc(3vw * 1.3);
+        width: calc(3vw * 1.3);
+        font-size: calc(2vw * 1.3);
+    }
+    .Gatter-One{
+        height: calc(17.0vw * 1.3);
+        position: absolute;
+        top: calc(2.0vw * 1.3);
+        left: 0;
+    }
+    .Gatter-Two{
+        height: calc(17.0vw * 1.3);
+        position: absolute;
+        top: calc(6.0vw * 1.3);
+        left: 0;
+        z-index: 1;
+    }
+    .Gatter-Three{
+        height: calc(8.0vw * 1.3);
+        position: absolute;
+        top: calc(16.7vw * 1.3);
+        left: calc(17.0vw * 1.3);
+        z-index: 2;
+    }
+    .Gatter-Four{
+        height: calc(15.0vw * 1.3);
+        position: absolute;
+        top: 0;
+        left: calc(17.7vw * 1.3);
+        z-index: 2;
+    }
+    .Gatter-Five{
+        height: calc(8.8vw * 1.3);
+        position: absolute;
+        top: calc(16.0vw * 1.3);
+        left: calc(29.0vw * 1.3);
+        z-index: 3;
+    }
+    .Gatter-Six{
+        height: calc(8.0vw * 1.3);
+        position: absolute;
+        top: calc(13.5vw * 1.3);
+        left: calc(52.0vw * 1.3);
+        z-index: 4;
+    }
+}

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Elektrischer Strom</title>
+        <link rel="stylesheet" type="text/css" href="ElektrischerStrom.css">
+
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            .Codefenster{
+                background-color: white;
+                color: black;
+                font-size: 2vh;
+                font-family: "Tektur";
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 100vh;
+                width: 100vw;
+                text-align: center;
+            }
+            .Codefenster p{
+                display: inline-block;
+                width: 50vh;
+            }
+            .codefenster{
+                height: 20vh;
+                width: 30vh;
+                background-color: #83ff99;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: -20vh;
+            }
+            .codefenster input{
+                font-size: 2vh;
+                padding-inline: 0.5vh;
+                height: 3vh;
+                width: calc(100% - 40%);
+                border-radius: 0.5vh;
+                border: 0;
+                outline: 0;
+            }
+            .Webseitencontent{
+                display: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="Codefenster">
+            <p>Diese Webseite wird für den pivaten Gebrau genutzt. <br> Daher ist sie nicht für jeden zugänglich und du musst erst deinen personalisierten Code in das Codefenster eingeben, um zur Hauptwebseite zu gelangen und die Funktionen freizuschalten.</p>
+            <div class="codefenster">
+                <p>Bitte Passwort eingeben:</p>
+                <input class="passwordfield" oninput="checkPassword()" type="text">
+            </div>
+        </div>
+        <div class="Webseitencontent">
+            <header>
+                <h1>Elektrischer Strom</h1>
+            </header>
+            <div class="content">
+    
+    
+                <section class="Erklärung">
+                    <p>
+                        Elektrischer Strom besteht aus ganz vielen negativ geladenen Elektronen, welche vom Minuspol
+                        in die Richtung des Pluspols fließen, wenn ihr Stromkreis geschlossen ist.
+                        Dabei fließen die Elektronen durch alle Verbraucher auf dem Weg des geringsten Wiederstands und können
+                        Licht, Wärme erzeugen und sogar eine magnetische und chemische Wirkung haben.
+                    </p>
+                </section>
+    
+    
+    
+    
+    
+    
+                <section class="PhysikalischeGrößen">
+                    <h2>Wichtige Physikalische Größen</h2>
+                    <table>
+                        <tr class="tr">
+                            <th></th>
+                            <th>Formelzeichen</th>
+                            <th class="einheitszeichen">Einheitszeichen</th>
+                        </tr>
+                        <tr class="tr">
+                            <th>Spannung</th>
+                            <td>U</td>
+                            <td class="einheitszeichen">V(Volt)</td>
+                        </tr>
+                        <tr class="tr">
+                            <th>Stromstärke</th>
+                            <td>I</td>
+                            <td class="einheitszeichen">A(Ampere)</td>
+                        </tr>
+                        <tr class="tr">
+                            <th>Wiederstand</th>
+                            <td>R</td>
+                            <td class="einheitszeichen">&#8486;(Ohm)</td>
+                        </tr>
+                        <tr class="tr">
+                            <th class="untererRand">Leistung</th>
+                            <td class="untererRand">P</td>
+                            <td class="einheitszeichen untererRand">W(Watt)</td>
+                        </tr>
+        
+                    </table>
+                </section>
+    
+    
+    
+    
+    
+    
+        
+                <section class="Ausrechnen">
+                    <h2>Ausrechnen der Größen</h2>
+                    <h3>URI-Dreieck</h3>
+                    <div class="URI">
+                        <p class="Dreieckserklärung">
+                            Mithilfe des URI-Dreiecks kann man die Stromstärke,
+                            Spannung und den Wiederstand ausrechenn. Dazu verdeckt man
+                            einfach die auszurechnende Größe. Wenn die zwei übrigen nebeneinander
+                            liegen müssen sie multipliziert werden. Wenn sie übereinander
+                            liegen muss die obere Größe durch die untere geteilt werden.
+                        </p>
+                        <img class="DreieckURI" src="Graphiken/Sonstige/URI-Dreieck.png" alt="">
+                    </div>
+        
+                    <h3>PUI-Dreieck</h3>
+                    <div class="PUI">
+                        <p class="Dreieckserklärung">
+                            Mithilfe des PUI-Dreiecks kann man die Stromstärke,
+                            die Spannung und die Leistung ausrechnen. man rechnet alles
+                            genau so, wie beim URI-Dreieck. Zuerst muss man die gesuchte 
+                            Größe verdecken und die anderen beiden multiplizieren oder dividieren.
+                            
+                        </p>
+                        <img class="DreieckPUI" src="Graphiken/Sonstige/PUI-Dreieck.png" alt="">
+                    </div>
+                    
+                </section>
+    
+    
+    
+    
+    
+        
+                <section class="Stromkreise">
+                    <h2>Stromkreise</h2>
+                    <h3>Reihe</h3>
+                    <div class="Reihe">
+                        <p class="Reihenerklärung">Das rechts gezeigte Beispiel ist eine Reihenschaltung.
+                            In einer Reihenschaltung wird die Spannung der Spannungsquelle durch die Verbraucher
+                            geteilt, wenn diese genau gleichviel verbrauchen. D.h. dass kein Verbraucher die 
+                            volle Spannung der Spannungsquelle abbekommt. Die Stromstärke
+                            bleibt an jedem Punkt in der Schaltung genau gleich.
+                        </p>
+                        <img class="Reihenschaltung" src="Graphiken/Schaltkreise/Reihenschaltung.png" alt="">
+                    </div>
+                    
+                    
+                    <h3>Parallel</h3>
+                    <div class="Parallel">
+                        <img class="Parallelschaltung" src="Graphiken/Schaltkreise/Parallelschaltung.png" alt="">
+                        <p class="Parallelerklärung">
+                            Das links gezeigte Beispiel ist eine Parallelschaltung.
+                            In einer Parallelschaltung wird die Stromstärke auf die Verbraucher verteilt
+                            und die Spannung bleibt überall genau gleich. Das besondere an einer Parallelschaltung ist,
+                            dass auch wenn mehrere Verbraucher kaputt sind oder aus der Schaltung entfernt werden,
+                            die übrigen Verbraucher immernoch funktionieren können.  
+                        </p>
+                    </div>
+                    
+                </section>
+    
+    
+    
+    
+    
+                <section class="Schaltzeichen">
+                    <h2>Schaltzeichen</h2>
+                    <p>In dieser Tabelle werden einige der wichtigsten Schaltzeichendargestellt.</p>
+                    <table class="Schaltzeichentabelle">
+                        <tr class="Symboltabellenreihe">
+                            <th><h3>Symbol</h3></th>
+                            <th class="rechterRand"><h3>Bezeichnung</h3></th>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/Leiter.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">Leiter</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/Abzweig.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">Abzweig</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/Energiequelle.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">elektrische Energiequelle</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/Batterie.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">Batterie</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/geöffneter Schalter.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">offener Schalter</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/geschlossener Schalter.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">geschlossener Schalter</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/Sicherung.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">Sicherung</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/Wiederstand.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">Wiederstand</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/Glühlampe.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">Glühlampe</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td><img class="Symbol" src="Graphiken/Schaltsymbole/Stromstärkemessgerät.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand">Stromstärkemessgerät</td>
+                        </tr>
+                        <tr class="Symboltabellenreihe">
+                            <td class="untererRand"><img class="Symbol" src="Graphiken/Schaltsymbole/Spannungsmessgerät.png" alt="Foto eines Schaltzeichens"></td>
+                            <td class="rechterRand untererRand">Spannungsmessgerät</td>
+                        </tr>
+                    </table>
+                </section>
+    
+    
+    
+    
+    
+    
+        
+                <section class="Messen">
+                    <h2>Messen</h2>
+                    <h3>Spannung</h3>
+                    <div class="SpannungMessen">
+                        <p>
+                            Die Spannung wird immer gemessen, indem man ein Kabel des Voltmeters
+                            vor und eins hinter einen Verbraucher steckt. Mann kann auch die Spannung der Spannungquelle messen, indem man ein Kabel am Minus- 
+                            und das Andere am Pluspol einsteckt. 
+                        </p>
+                        <img class="VoltMessen" src="Graphiken/Schaltkreise/Volt messen.png" alt="">
+                    </div>
+                    
+                    <h3>Stromstärke</h3>
+                    <div class="StromstärkeMessen">
+                        <p>
+                            Die Stromstärke wird immer gemessen, indem man einen Steckverbinder oder ein Verbindungskabel
+                            in dem Stromkreis durch die beiden Kabel des Amperemeters ersetzt. 
+                        </p>
+                        <img class="AmpereMessen" src="Graphiken/Schaltkreise/Ampere messen.png" alt="">
+                    </div>
+                </section>
+    
+    
+                <section class="Quiz1">
+                    <h2>Quiz</h2>
+                    <div>
+                        <p>Unter diesem Text findest du einen Stromkreis und ein paar Angaben 
+                            zur Stromspannung und Stromstärke. Rechne die restlichen Felder aus. 
+                            Schreibe für die Einheiten nur den Anfangsbuchstaben.</p>
+                        <div class="Stromkreisquiz">
+                            <img src="Graphiken/Schaltkreise/Quiz.png" alt="">
+                            <div class="StromkreisquizMesswerte">
+                                <p>I1: 6A</p>
+                                <p>I2: <input oninput="I2()" id="Quiz1Input1" type="text"></p>
+                                <p>I3: <input oninput="I3()" id="Quiz1Input2" type="text"></p>
+                                <p>I4: 6A</p>
+                                <p>U1: 230V</p>
+                                <p>U2: <input oninput="V2()" id="Quiz1Input3" type="text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+    
+    
+                <section class="Gefahren">
+                    <h2>Gefahren des elektrischen <br> Stroms</h2>
+                    <p>
+                        Elektrischer Strom bringt viele Möglichkeiten mit sich und es macht
+                        Spaß mit ihm zu experimentieren, doch man muss auch einige Sachen beachten:
+                    </p>
+                    <div class="Kurzschluss">
+                        <h3>Kurzschluss</h3>
+                        <p>
+                            Bei dem Arbeiten mit elektrischem Strom muss man darauf auchten, dass der Stron immer durch ein Element 
+                            im Schaltkreis fließen, durch welches sie verlangsamt werden. Das kann ein Wiederstand oder ein normaler
+                            Verbraucher sein. Wenn man den Minuspol direkt mit dem Pluspol verbindet, entsteht sehr viel Hitze und
+                            es kann zu einem Kurzschluss kommen. Im schlimmsten fall kann es sogar anfangen zu brennen.
+                        </p>
+                    </div>
+                    <div class="ElektrischerSchlag">
+                        <h3>elektrischer Schlag</h3>
+                        <p>
+                            Fasse niemals eine ohne Schutzhandschuhe eine Elektrische Schaltung an.
+                            Schon eine Stromstärke von 10mA (0,01 A) kann gefährlich für den Menschlichen Körper sein,
+                            da er zu fast 80% aus Wasser besteht und gelöste Salze beinhaltet. Der Kontakt mit hoher
+                            Stromstärke kann zu Muskelkrämpfen, Verbrennungen und dem Tod führen.
+                        </p>
+                    </div>
+                    <div class="Sicherheitstipps">
+                        <h3>Sicherheitstipps für den <br> Umgang mit Strom</h3>
+                        <p>
+                            1.Experimentiere niemals mit elektrischen Quellen, die eine Spannung von 25 V oder mehr besitzen <br>
+                            2.Berühre niemals die Pole einer Steckdose, blanke Leitungen oder Leitungen mit einer schadhaften Isolierung mit bloßen Händen <br>
+                            3.Schließen Sie elektrische Geräte stets an die richtige elektrische Quelle an <br>
+                            4.Baue elektrische Schaltungen stets bei ausgeschalteter elektrischer Quelle auf <br>
+                            5.Bei gefährlichen Schaltungen müssen Sicherungen (Leitungsschutzschalter) bzw. Fehlerstromschutzschalter eingebaut werden <br>
+                            6.Elektrogeräte immer vor Feuchtigkeit und Nässe schützen 
+                        </p>
+                    </div>
+    
+                </section>
+    
+    
+    
+    
+    
+    
+                <section class="Quiz">
+                    <h2>Quiz</h2>
+                    <p>
+                        Hier kannst du noch einmal prüfen ob du die
+                        Berechnung der einzelnen Größen noch beherrscht.
+                        Fülle dazu einfach die Lücken in der Tabelle aus.
+                        Gib bitte die Einheiten beim vollen Namen ein und runde auf die erste 
+                        Nachkommastelle in deinem Ergebnis
+                    </p>
+                    <table class="QuizTabelle">
+                        <tr>
+                            <th>Spannung</th>
+                            <th>Stromstärke</th>
+                            <th>Wiederstand</th>
+                            <th class="rechterRand">Leistung</th>
+                        </tr>
+                        <tr>
+                            <td><input oninput="Spannung1()" id="Quiz-Spannung-1" type="text" style="width: 100px;"></td>
+                            <td>5 Ampere</td>
+                            <td>16 Ohm</td>
+                            <td class="rechterRand"><input oninput="Leistung1()" id="Quiz-Leistung-1" type="text" style="width: 100px;"></td>
+                        </tr>
+                        <tr>
+                            <td>12 Volt</td>
+                            <td>0,1 Ampere</td>
+                            <td><input oninput="Wiederstand1()" id="Quiz-Wiederstand-1" type="text" style="width: 100px;"></td>
+                            <td class="rechterRand"><input oninput="Leistung2()" id="Quiz-Leistung-2" type="text" style="width: 100px;"></td>
+                        </tr>
+                        <tr>
+                            <td><input oninput="Spannung2()" id="Quiz-Spannung-2" type="text" style="width: 100px;"></td>
+                            <td>3 Ampere</td>
+                            <td><input oninput="Wiederstand2()" id="Quiz-Wiederstand-2" type="text" style="width: 100px;"></td>
+                            <td class="rechterRand">15 Watt</td>
+                        </tr>
+                        <tr>
+                            <td class="untererRand">3 Volt</td>
+                            <td class="untererRand"><input oninput="Stromstärke1()" id="Quiz-Stromstärke-1" type="text" style="width: 100px;"></td>
+                            <td class="untererRand"><input oninput="Wiederstand3()" id="Quiz-Wiederstand-3" type="text" style="width: 100px;"></td>
+                            <td class="rechterRand untererRand">5 Watt</td>
+                        </tr>
+                    </table>
+    
+    
+                    <script>
+                        
+                    </script>
+    
+                </section>
+    
+    
+    
+    
+    
+    
+    
+    
+                <section class="Gatter">
+                    <h2>Logische Gatter</h2>
+                    <p class="Gatter-Erklärung">Logische Gatter sind die Grundbausteine 
+                        von Maschinen, Automaten und Computern1. Sie sind elektronische 
+                        Bauteile, die an ihren Eingängen binäre Signale empfangen und Werte 
+                        von 1 oder 0 (wahr oder falsch || Stromsignale) zurückgeben. Die Gatter 
+                        arbeiten mit zwei elektrischen Spannungen (Logikpegel). Eine Spannung 
+                        mit Werten zwischen 0 V und 0,8 V repräsentiert den Pegel 0 (falsch), 
+                        während der zweite Spannungswert zwischen 2 V und 5 V liegen sollte, um 
+                        den Pegel 1 (wahr) zu repräsentieren1. Diese Unterscheidung wird in Schaltungen 
+                        vom Typ TTL (Transistor-Transistor-Logic) verwendet. Heutzutage 
+                        bestehen die meisten Logikgatter aus Transistoren und sind als 
+                        integrierte Schaltungen implementiert12. Sie können jedoch auch 
+                        aus diskreten elektronischen Bauelementen, mittels Schalter oder 
+                        Relais aufgebaut oder sogar mittels fluidischen Bauelementen 
+                        dargestellt werden. In diesem Abteil sind die drei einfachsten 
+                        und ein etwas schwereres Gatter abgebildet.
+                    </p>
+                    <h3>Und-Gatter</h3>
+                    <div class="Undgatter">
+                        
+                        <p>Ein Und-Gatter hat immer mindestens zwei
+                            Inputs. Wenn in allen dieser Inputs Strom fließt, fließt auch durch den Output Strom.
+                            Wenn nicht durch alle Inputs Strom fließt, fließt auch durch den Output kein Strom.
+                            Man kann es sich vorstellen, wiel eine Reihenschaltung von zwei oder mehreren Schaltern.
+                            Wenn alle Schalter geschlossen sind, fließt Strom durch die Reihenschaltung, sonst nicht.
+                        </p>
+                        <div id="Und-Gatter">
+                            <div class="Knöpfe">
+                                <div onclick="UndGatterInputA()" class="Knopf" id="UndGatterInputBtnA"><p>⚡</p></div>
+                                <div onclick="UndGatterInputB()" class="Knopf" id="UndGatterInputBtnB"><p>⚡</p></div>
+                            </div>
+                            <div class="Inputs">
+                                <img class="Input1" src="Graphiken/Gatter/nicht aktiviert/Input.png" alt="">
+                                <img class="Input2" src="Graphiken/Gatter/nicht aktiviert/Input.png" alt="">
+                            </div>
+                            <img class="Und-Gatter" src="Graphiken/Gatter/nicht aktiviert/Und-Gatter.png" alt="">
+                        </div> 
+                    </div>
+                    <h3>Oder-Gatter</h3>
+                    <div class="Odergatter">
+                        <p>Ein Oder-Gatter hat immer mindestens zwei Inputs.
+                            Anders als beim Und-Gatter fließt schon Strom durch den Output, wenn durch mindestens einen
+                            Input Strom fließt. Es fließt aber genau, wie beim Und-Gatter kein Strom durch den Output, wenn durch keinen Input Strom fließt.
+                            man kann es sich vorstellen, wie eine Parallelschaltung von mehreren Schaltern. Wen mindestens ein Schalter geschlossen ist,
+                            fließt Strom durch den Stromkreis.
+                        </p>
+                        <div id="Oder-Gatter">
+                            <div class="Knöpfe" style="translate: 20px;">
+                                <div onclick="OderGatterInputA()" class="Knopf"><p>⚡</p></div>
+                                <div onclick="OderGatterInputB()" class="Knopf"><p>⚡</p></div>
+                            </div>
+                            <div class="Inputs" style="translate: 25px;">
+                                <img class="Input1" src="Graphiken/Gatter/nicht aktiviert/Input.png" alt="">
+                                <img class="Input2" src="Graphiken/Gatter/nicht aktiviert/Input.png" alt="">
+                            </div>
+                            <img class="Oder-Gatter" src="Graphiken/Gatter/nicht aktiviert/Oder-Gatter.png" alt="">
+                        </div> 
+                    </div>
+                    <h3>Not-Gatter</h3>
+                    <div class="Notgatter">
+                        <p>Ein Not-Gatter hat nur einen Input und gibt immer das Gegenteil
+                            des Inputs wieder aus. Das heißt, dass kein Strom durch den Output fließt, wenn Strom durch den Input fließt und umgekehrt.
+                        </p>
+                        <div id="Not-Gatter">
+                            <div class="Knöpfe">
+                                <div onclick="NotGatterInputA()" class="Knopf"><p>⚡</p></div>
+                            </div>
+                            <div class="Inputs">
+                                <img class="Input2" src="Graphiken/Gatter/nicht aktiviert/Input.png" alt="">
+                            </div>
+                            <img class="Not-Gatter" src="Graphiken/Gatter/nicht aktiviert/Not-Gatter.png" alt="">
+                        </div> 
+                    </div>
+                    <h3>XOder-Gatter</h3>
+                    <div class="XOdergatter">
+                        <p>Das XOder-Gatter ist eine Erweiterung des Oder-Gatters, welche fast genau so funktioniert, wie
+                            das Oder-Gatter. Meistens besitzt es aber nur 2 Inputs. Außerdem fließt, anders als beim Oder-Gatter, kein Strom durch den Output, wenn durch zwei (oder mehr) Inputs
+                            Strom fließt. Um sich dieses Gatter besser vorzustellen, ist unter diesem Text eine Kombination
+                            von den leichteren Logischen Gattern abgbildet.
+                        </p>
+                        <div id="XOder-Gatter">
+                            <div class="Knöpfe" style="translate: 30px;">
+                                <div onclick="XOderGatterInputA()" class="Knopf" id="XOderGatterInputBtnA"><p>⚡</p></div>
+                                <div onclick="XOderGatterInputB()" class="Knopf" id="XOderGatterInputBtnB"><p>⚡</p></div>
+                            </div>
+                            <div class="Inputs" style="translate: 35px;">
+                                <img class="Input1" src="Graphiken/Gatter/nicht aktiviert/Input.png" alt="">
+                                <img class="Input2" src="Graphiken/Gatter/nicht aktiviert/Input.png" alt="">
+                            </div>
+                            <img class="XOder-Gatter" src="Graphiken/Gatter/nicht aktiviert/XOder-Gatter.png" alt="">
+                        </div> 
+                    </div>
+        
+                    <div id="XOder-Gatter-Vereinfachung">
+                        <div class="Knöpfe-XOder">
+                            <div class="Knopf" onclick="XOderEGatterInputA()"><p>⚡</p></div>
+                            <div class="Knopf" onclick="XOderEGatterInputB()"><p>⚡</p></div>
+                        </div>
+                        <img class="Gatter-One" src="Graphiken/Gatter/nicht aktiviert/Input-XOder-1-oben-Gatter.png" alt="">
+                        <img class="Gatter-Two" src="Graphiken/Gatter/nicht aktiviert/Input-XOder-2-unten-Gatter.png" alt="">
+                        <img class="Gatter-Three" src="Graphiken/Gatter/nicht aktiviert/Und-XOder-3-unten-Gatter.png" alt="">
+                        <img class="Gatter-Four" src="Graphiken/Gatter/nicht aktiviert/Oder-XOder-4-oben-Gatter.png" alt="">
+                        <img class="Gatter-Five" src="Graphiken/Gatter/nicht aktiviert/Not-XOder-5-unten-Gatter.png" alt="">
+                        <img class="Gatter-Six" src="Graphiken/Gatter/nicht aktiviert/OutputUnd-XOder-6-unten-Gatter.png" alt="">
+                    </div>
+                </section>
+            </div>
+            <script src="script.js"></script>
+    
+        </div>
+        <script src="script2.js"></script>
+
+    </body>
+</html>
