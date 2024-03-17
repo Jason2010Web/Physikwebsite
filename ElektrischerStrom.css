@@ -48,7 +48,7 @@ header > h1{
     text-decoration: underline;
 }
 .content{
-    max-width: 100vw;
+    width: var(--unit-100vw);
     margin-left: auto;
     margin-right: auto;
     border-inline: 1px solid #999;
@@ -426,9 +426,6 @@ input{
     }
 }
 @media only screen and (orientation: portrait) {
-    .content{
-        width: var(--unit-100vw);
-    }
     .Gatter{
         margin-bottom: -100px;
     }
