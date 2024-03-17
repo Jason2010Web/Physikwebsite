@@ -426,6 +426,9 @@ input{
     }
 }
 @media only screen and (orientation: portrait) {
+    .content{
+        width: 100%;
+    }
     .Gatter{
         margin-bottom: -100px;
     }
