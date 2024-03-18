@@ -23,6 +23,7 @@ body{
     justify-content: center;
     flex-direction: column;
     font-family: "Tektur";
+    font-size: 0.9em;
 }
 ::-webkit-scrollbar {
     background-color: transparent;
@@ -83,7 +84,7 @@ h3{
     margin-top: 70px;
 }
 table{
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
