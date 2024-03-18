@@ -59,6 +59,16 @@ header > h1{
 }
 h2{
     margin-left: -20px;
+    color: rgb(0, 138, 7);
+}
+h3{
+    color: rgb(0, 186, 9);
+}
+.gefahr{
+    color: rgb(255, 0, 0);
+}
+.Gefahr{
+    color: rgb(174, 0, 0);
 }
 
 
