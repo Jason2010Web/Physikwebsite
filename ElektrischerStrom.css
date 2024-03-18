@@ -211,9 +211,8 @@ th, td{
     align-items: center;
 }
 .Stromkreisquiz img{
-    height: 300px;
-    margin: 50px;
-    margin-right: 100px;
+    width: 30vw;
+    margin: 30px;
 }
 .Stromkreisquiz div p{
     font-weight: 700;
