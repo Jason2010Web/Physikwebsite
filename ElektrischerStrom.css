@@ -309,14 +309,13 @@ input{
 
 .Undgatter{
     display: flex;
-    flex-direction: collumn;
+    flex-direction: column;
 }
 #Und-Gatter{
     display: flex;
     flex-direction: row;
     height: 80px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-right: auto;
     margin-left: auto;
 }
 .Und-Gatter{
@@ -327,14 +326,13 @@ input{
 
 .Odergatter{
     display: flex;
-    flex-direction: collumn;
+    flex-direction: column;
 }
 #Oder-Gatter{
     display: flex;
     flex-direction: row;
     height: 80px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-right: auto;
     margin-left: auto;
 }
 .Oder-Gatter{
@@ -345,14 +343,13 @@ input{
 
 .Notgatter{
     display: flex;
-    flex-direction: collumn;
+    flex-direction: column;
 }
 #Not-Gatter{
     display: flex;
     flex-direction: row;
     height: 80px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-right: auto;
     margin-left: auto;
 }
 .Not-Gatter{
@@ -362,14 +359,13 @@ input{
 
 .XOdergatter{
     display: flex;
-    flex-direction: collumn;
+    flex-direction: column;
 }
 #XOder-Gatter{
     display: flex;
     flex-direction: row;
     height: 80px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-right: auto;
     margin-left: auto;
 }
 .XOder-Gatter{
@@ -382,7 +378,8 @@ input{
     height: 300px;
     position: relative;
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (orientation: landscape) {
