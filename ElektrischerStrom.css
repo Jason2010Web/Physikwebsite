@@ -309,7 +309,7 @@ input{
 
 .Undgatter{
     display: flex;
-    flex-direction: row;
+    flex-direction: collumn;
 }
 #Und-Gatter{
     display: flex;
@@ -327,7 +327,7 @@ input{
 
 .Odergatter{
     display: flex;
-    flex-direction: row;
+    flex-direction: collumn;
 }
 #Oder-Gatter{
     display: flex;
@@ -345,7 +345,7 @@ input{
 
 .Notgatter{
     display: flex;
-    flex-direction: row;
+    flex-direction: collumn;
 }
 #Not-Gatter{
     display: flex;
@@ -362,7 +362,7 @@ input{
 
 .XOdergatter{
     display: flex;
-    flex-direction: row;
+    flex-direction: collumn;
 }
 #XOder-Gatter{
     display: flex;
