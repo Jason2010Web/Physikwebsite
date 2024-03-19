@@ -23,7 +23,7 @@ body{
     justify-content: center;
     flex-direction: column;
     font-family: "Tektur";
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 ::-webkit-scrollbar {
     background-color: transparent;
