@@ -317,6 +317,7 @@ input{
     height: 80px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
 }
 .Und-Gatter{
     height: 80px;
@@ -334,6 +335,7 @@ input{
     height: 80px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
 }
 .Oder-Gatter{
     height: 80px;
@@ -351,6 +353,7 @@ input{
     height: 80px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
 }
 .Not-Gatter{
     height: 80px;
@@ -367,6 +370,7 @@ input{
     height: 80px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
 }
 .XOder-Gatter{
     height: 80px;
