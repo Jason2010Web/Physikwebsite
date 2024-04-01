@@ -58,6 +58,9 @@ header > h1{
     top: -70px;
     padding-top: 100px;
 }
+p{
+    text-align: justify;
+}
 h2{
     margin-left: -20px;
     color: rgb(0, 138, 7);
