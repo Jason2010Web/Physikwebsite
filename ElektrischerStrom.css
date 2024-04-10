@@ -237,9 +237,6 @@ th, td{
 #Kosten{
     padding-inline: 50px ;
 }
-#Kosten p{
-    width: 60%;
-}
 #Kosten_Ergebnis{
     text-decoration: underline;
 }
