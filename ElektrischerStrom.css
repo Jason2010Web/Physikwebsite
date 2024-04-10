@@ -30,6 +30,11 @@ body{
     width: 0px;
 }
 
+.anchor {
+    display: block;
+    height: 100px; /* oder die Höhe Ihrer Navigation */
+    visibility: hidden;
+}
 header{
     height: 60px;
     width: var(--unit-100vw);
@@ -73,16 +78,38 @@ h3{
     color: rgb(174, 0, 0);
 }
 
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    width: 300px;
+    background-color: #83ff99;
+    /* box-shadow: 1px 1px 2px rgba(0, 138, 7, 0.332); */
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.links a:hover{
+    background-color: #6ed982;
+}
+.links h2{
+    margin-bottom: 20px;
+}
+
 
 .Erklärung{
     padding-inline: 50px ;
-    margin-top: 70px;
 }
 
 
 .PhysikalischeGrößen{
     padding-inline: 50px ;
-    margin-top: 70px;
 }
 table{
     width: 40%;
@@ -106,7 +133,6 @@ th, td{
 
 .Ausrechnen{
     padding-inline: 50px ;
-    margin-top: 70px;
 }
 .Dreieckserklärung{
     width: 60%;
@@ -136,7 +162,6 @@ th, td{
 
 .Stromkreise{
     padding-inline: 50px ;
-    margin-top: 70px;
 }
 .Reihe{
     display: flex;
@@ -170,7 +195,6 @@ th, td{
 
 .Schaltzeichen{
     padding-inline: 50px ;
-    margin-top: 70px;
 }
 .Symbol{
     width: 100px;
@@ -185,7 +209,6 @@ th, td{
 
 .Messen{
     padding-inline: 50px ;
-    margin-top: 70px;
 }
 .SpannungMessen{
     display: flex;
@@ -211,12 +234,21 @@ th, td{
     margin-left: auto;
 }
 
+#Kosten{
+    padding-inline: 50px ;
+}
+#Kosten p{
+    width: 60%;
+}
+#Kosten_Ergebnis{
+    text-decoration: underline;
+}
+
 
 
 
 .Quiz1{
     padding-inline: 50px ;
-    margin-top: 70px;
 }
 .Stromkreisquiz{
     display: flex;
@@ -240,14 +272,12 @@ th, td{
 
 .Gefahren{
     padding-inline: 50px ;
-    margin-top: 70px;
 }
 
 
 
 .Quiz{
     padding-inline: 50px ;
-    margin-top: 70px;
     margin-bottom: 70px;
 }
 .rechterRand{
@@ -273,7 +303,6 @@ input{
 
 .Gatter{
     padding-inline: 50px;
-    margin-top: 70px;
     margin-bottom: 70px;
 }
 .Input1{
@@ -383,8 +412,6 @@ input{
     height: 300px;
     position: relative;
     margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 @media only screen and (orientation: landscape) {
