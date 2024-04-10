@@ -69,9 +69,25 @@
                 <h1>Elektrischer Strom</h1>
             </header>
             <div class="content">
+
+                <section class="links">
+                    <h2>Übersicht:</h2>
+                        <a href="ElektrischerStrom.html#Erklärung">Erklärung</a>
+                        <a href="ElektrischerStrom.html#PhysikalischeGrößen">Wichtige physikalische Größen</a>
+                        <a href="ElektrischerStrom.html#Ausrechnen">Ausrechnen der Größen</a>
+                        <a href="ElektrischerStrom.html#Stromkreise">Stromkreise</a>
+                        <a href="ElektrischerStrom.html#Schaltzeichen">Schaltzeichen</a>
+                        <a href="ElektrischerStrom.html#Messen">Messen</a>
+                        <a href="ElektrischerStrom.html#Kosten">Kosten berechnen</a>
+                        <a href="ElektrischerStrom.html#Quiz1">Quiz "Stromkreise"</a>
+                        <a href="ElektrischerStrom.html#Gefahren">Gefahren des elektrischen Stroms</a>
+                        <a href="ElektrischerStrom.html#Quiz2">Quiz "Ausrechnen"</a>
+                        <a href="ElektrischerStrom.html#Gatter">Logische Gatter</a>
+                </section>
     
     
-                <section class="Erklärung">
+                <section class="Erklärung" id="Erklärung">
+                    <div class="anchor"></div>
                     <p>
                         Elektrischer Strom besteht aus ganz vielen negativ geladenen Elektronen, welche vom Minuspol
                         in die Richtung des Pluspols fließen, wenn ihr Stromkreis geschlossen ist.
@@ -85,7 +101,8 @@
     
     
     
-                <section class="PhysikalischeGrößen">
+                <section class="PhysikalischeGrößen" id="PhysikalischeGrößen">
+                    <div class="anchor"></div>
                     <h2>Wichtige Physikalische Größen</h2>
                     <table>
                         <tr class="tr">
@@ -123,7 +140,8 @@
     
     
         
-                <section class="Ausrechnen">
+                <section class="Ausrechnen" id="Ausrechnen">
+                    <div class="anchor"></div>
                     <h2>Ausrechnen der Größen</h2>
                     <h3>URI-Dreieck</h3>
                     <div class="URI">
@@ -156,7 +174,8 @@
     
     
         
-                <section class="Stromkreise">
+                <section class="Stromkreise" id="Stromkreise">
+                    <div class="anchor"></div>
                     <h2>Stromkreise</h2>
                     <h3>Reihe</h3>
                     <div class="Reihe">
@@ -188,7 +207,8 @@
     
     
     
-                <section class="Schaltzeichen">
+                <section class="Schaltzeichen" id="Schaltzeichen">
+                    <div class="anchor"></div>
                     <h2>Schaltzeichen</h2>
                     <p>In dieser Tabelle werden einige der wichtigsten Schaltzeichendargestellt.</p>
                     <table class="Schaltzeichentabelle">
@@ -249,7 +269,8 @@
     
     
         
-                <section class="Messen">
+                <section class="Messen" id="Messen">
+                    <div class="anchor"></div>
                     <h2>Messen</h2>
                     <h3>Spannung</h3>
                     <div class="SpannungMessen">
@@ -270,9 +291,41 @@
                         <img class="AmpereMessen" src="Graphiken/Schaltkreise/Ampere messen.png" alt="">
                     </div>
                 </section>
+
+
+                <section id="Kosten">
+                    <div class="anchor"></div>
+                    <h2>Kosten berechnen</h2>
+                    <p>
+                        Nehmen wir als Beispiel, du möchtest ausrechnen, wie viel es kostet, dein Handy aufzuladen. 
+                        Dafür müssen wir nur wissen, wie viel Watt dein Netzteil liefert und wie lange dein Handy braucht, von 0% - 100% aufzuladen. <br> <br>
+                        Beispiel: <br>
+                        Strompreise: 37 Cent pro Kilowattstunde (kWh) <br>
+                        Leistung des Netzteils: 30 Watt <br>
+                        Ladezeit des Handys: 1,5 Stunden <br> <br>
+                        Wir berechnen erst einmal, wie viele Kilowattstunden das Laden verbraucht. Dazu multiplizieren wir die Leistung mit der Ladezeit und teilen das Ergebnis durch 1000: <br>
+                        30 Watt * 1,5 Stunden : 1000 = 0,045 Kilowattstunden (kWh) <br> <br>
+                        Zum Schluss multiplizieren wir die Kilowattstunden mit den Strompreisen: <br>
+                        0,045 kWh * 37 ct = 1,665 Cent <br> <br>
+                        Wenn wir jetzt noch ausrechnen wollen, wie viel es im Jahr kostet multiplizieren wir die 1,665 Cent mit 365 Tagen: <br>
+                        1,665 ct * 365 Tage = 607,725 Cent = <span id="Kosten_Ergebnis">6,07€</span> <br> <br>
+                        Beispiel 2: <br>
+                        Wie viel kostet es im Jahr, sich 20min pro Tag die Haare zu föhnen? <br> <br>
+                        Strompreise: 37 Cent pro Kilowattstunde (kWh) <br>
+                        Leistung des Föhns: 1600 Watt <br>
+                        Dauer des Föhnens: 20 Minuten <br> <br>
+                        Wir berechnen erst einmal, wie viele Kilowattstunden das Föhnen verbraucht. Dazu multiplizieren wir die Leistung mit der Dauer und teilen das Ergebnis durch 1000: <br>
+                        1600 Watt * 1/3 Stunden : 1000 = 0,53... Kilowattstunden (kWh) <br> <br>
+                        Zum Schluss multiplizieren  wir die Kilowattstunden mit den Strompreisen: <br>
+                        0,53... kWh * 37 ct = 19,73... Cent = 0,19€ <br> <br>
+                        Jetzt multiplizieren wir das noch einmal mit 365: <br>
+                        0,19€ * 365 Tage = <span id="Kosten_Ergebnis">72,02€</span>
+                    </p>
+                </section>
     
     
-                <section class="Quiz1">
+                <section class="Quiz1" id="Quiz1">
+                    <div class="anchor"></div>
                     <h2>Quiz</h2>
                     <div>
                         <p>Unter diesem Text findest du einen Stromkreis und ein paar Angaben 
@@ -294,7 +347,8 @@
     
     
     
-                <section class="Gefahren">
+                <section class="Gefahren" id="Gefahren">
+                    <div class="anchor"></div>
                     <h2 class="Gefahr">Gefahren des elektrischen <br> Stroms</h2>
                     <p>
                         Elektrischer Strom bringt viele Möglichkeiten mit sich und es macht
@@ -337,7 +391,8 @@
     
     
     
-                <section class="Quiz">
+                <section class="Quiz" id="Quiz2">
+                    <div class="anchor"></div>
                     <h2>Quiz</h2>
                     <p>
                         Hier kannst du noch einmal prüfen ob du die
@@ -386,7 +441,8 @@
     
     
     
-                <section class="Gatter">
+                <section class="Gatter" id="Gatter">
+                    <div class="anchor"></div>
                     <h2>Logische Gatter</h2>
                     <p class="Gatter-Erklärung">Logische Gatter sind die Grundbausteine 
                         von Maschinen, Automaten und Computern. Sie sind elektronische 
