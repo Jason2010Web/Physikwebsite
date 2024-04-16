@@ -58,10 +58,11 @@ header > h1{
     margin-left: auto;
     margin-right: auto;
     border-inline: 1px solid #999;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.225);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.225); */
     position: relative;
     top: -70px;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 h2{
@@ -237,6 +238,9 @@ th, td{
 #Kosten{
     padding-inline: 50px ;
 }
+#Kosten p{
+    width: 60%;
+}
 #Kosten_Ergebnis{
     text-decoration: underline;
 }
@@ -275,7 +279,6 @@ th, td{
 
 .Quiz{
     padding-inline: 50px ;
-    margin-bottom: 70px;
 }
 .rechterRand{
     border-right: none;
@@ -300,7 +303,6 @@ input{
 
 .Gatter{
     padding-inline: 50px;
-    margin-bottom: 70px;
 }
 .Input1{
     height: 5px;
@@ -409,6 +411,7 @@ input{
     height: 300px;
     position: relative;
     margin-top: 100px;
+    translate: calc(20%);
 }
 
 @media only screen and (orientation: landscape) {
@@ -520,4 +523,19 @@ input{
         left: calc(52.0vw * 1.3);
         z-index: 4;
     }
+}
+.Zusammenfassung{
+    padding-inline: 50px ;
+}
+.Zusammenfassung ul{
+    margin-left: 20px;
+    list-style-type: "- ";
+}
+.Zusammenfassung a{
+    text-decoration-thickness: 1px;
+    text-decoration-color: #6ed982;
+    display: inline-block;
+}
+.Zusammenfassung h3:hover{
+    color: #128e29;
 }
