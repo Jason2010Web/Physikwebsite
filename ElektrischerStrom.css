@@ -411,7 +411,6 @@ input{
     height: 300px;
     position: relative;
     margin-top: 100px;
-    translate: calc(20%);
 }
 
 @media only screen and (orientation: landscape) {
