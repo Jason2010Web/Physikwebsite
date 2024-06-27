@@ -219,7 +219,7 @@ th, td{
     width: 60%;
 }
 .VoltMessen{
-    height: 150px;
+    height: 100px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -229,7 +229,7 @@ th, td{
     flex-direction: row;
 }
 .AmpereMessen{
-    height: 100px;
+    height: 80px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -239,7 +239,7 @@ th, td{
     padding-inline: 50px ;
 }
 #Kosten p{
-    width: 60%;
+    width: 90%;
 }
 #Kosten_Ergebnis{
     text-decoration: underline;
