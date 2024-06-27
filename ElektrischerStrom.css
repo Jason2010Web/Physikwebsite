@@ -136,7 +136,7 @@ th, td{
     padding-inline: 50px ;
 }
 .Dreieckserklärung{
-    width: 60%;
+    width: 70%;
 }
 .URI{
     display: flex;
@@ -169,7 +169,7 @@ th, td{
     flex-direction: row;
 }
 .Reihenerklärung{
-    width: 60%;
+    width: 70%;
 }
 .Reihenschaltung{
     height: 70px;
@@ -182,7 +182,7 @@ th, td{
     flex-direction: row;
 }
 .Parallelerklärung{
-    width: 60%;
+    width: 70%;
 }
 .Parallelschaltung{
     height: 100px;
